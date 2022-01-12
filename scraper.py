@@ -92,11 +92,16 @@ for url in urls:
     # progress counter
     print(count,"/",total)
     count=count+1
+
+# UNCOMMENT THIS SECTION FOR TESTING
     
     if count == 3:
 
         json_object = json.dumps(articles, indent = 4) 
         print(json_object)
+
+# END TESTING SECTION        
+        
 # dont notify all users that new articles have been created. Warning, turning to true could cause spam.
 articles["notify_subscribers"] = "false"   
 
